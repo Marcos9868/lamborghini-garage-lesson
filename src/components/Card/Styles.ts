@@ -21,6 +21,27 @@ const styles = StyleSheet.create({
     width: "65%",
     resizeMode: "contain",
     marginTop: 10
+  },
+  carBrand: {
+    color: "#fff",
+    fontWeight: "400",
+    fontSize: 18,
+    fontStyle: "italic" 
+  },
+  carName: {
+    color: "#fff" as string,
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center"
+  },
+  carLogo: {
+    justifyContent: "center" as "center",
+    alignItems: "center" as "center",
+    marginBottom: 80,
+    width: 300,
+    height: 100,
+    padding: 10,
+    margin: "auto"
   }
 });
 
