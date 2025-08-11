@@ -1,0 +1,1 @@
+export const BASE_CAR_URL = "https://digitalinnovationone.github.io/fake-data-api-lamborghini/assets"
