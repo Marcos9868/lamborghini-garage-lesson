@@ -37,11 +37,22 @@ const styles = StyleSheet.create({
   carLogo: {
     justifyContent: "center" as "center",
     alignItems: "center" as "center",
-    marginBottom: 80,
+    marginBottom: 30,
     width: 300,
     height: 100,
     padding: 10,
     margin: "auto"
+  },
+  priceContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    marginBottom: 10,
+    paddingBottom: 10
+  },
+  priceLabel: {
+    color: "#fff",
+    fontSize: 22
   }
 });
 
