@@ -1,4 +1,4 @@
-import { View, Image, Text } from 'react-native'
+import { View, Image, Text, Button } from 'react-native'
 import React from 'react'
 import styles from './Styles'
 import '../../../index.d.ts'
@@ -28,6 +28,15 @@ const CardView = () => {
       source={{ uri: `${BASE_CAR_URL}/1.png` }}
     />
   );
+
+  const renderPriceControl = () => (
+    <View style={styles.priceContainer}>
+      <Button color={"#01A6B3"} title="<" onPress={() => {}}/>
+      <Text style={styles.priceLabel}> VALOR</Text>
+      <Button color={"#01A6B3"} title=">" onPress={() => {}}/>
+    </View>
+  );
+
   return (
     <View style={styles.imageContainer}>
       {renderLogoBox()}
@@ -36,6 +45,7 @@ const CardView = () => {
       {renderCarLogo()}
       <Divider />
       <BuyButton />
+      {renderPriceControl()}
     </View> 
   );
 }
